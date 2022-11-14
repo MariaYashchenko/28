@@ -89,7 +89,7 @@ def test_auth_with_incorrect_email(driver):
 
 def test_auth_with_incorrect_pass(driver):
     page = AuthPage(driver)
-    page.enter_email(''mv_ivanova@bk.ru')
+    page.enter_email('mv_ivanova@bk.ru')
     page.enter_pass('nbvf1201')
     page.btn_click()
     page.driver.save_screenshot('Incorrect_pass.png')
